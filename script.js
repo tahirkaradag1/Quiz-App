@@ -16,6 +16,7 @@ ui.next_btn.addEventListener("click", function(){
         startTimer(20);
         clearInterval(counterLine);
         startTimerLine();
+        ui.time_text.textContent = "Kalan Süre";
         ui.soruGoster(quiz.SoruGetir());
         ui.soruSayisiniGöster(quiz.soruIndex + 1, quiz.sorular.length);
         ui.next_btn.classList.remove("show");
@@ -38,6 +39,7 @@ ui.next_btn.addEventListener("click", function(){
         ui.score_box.classList.remove("active");
         clearInterval(counter);
         clearInterval(counterLine);
+        ui.time_text.textContent = "Kalan Süre";
         ui.btn_start.click();
     })
 });
