@@ -18,7 +18,6 @@ ui.next_btn.addEventListener("click", function(){
         startTimerLine();
         ui.time_text.textContent = "Kalan Süre";
         ui.soruGoster(quiz.SoruGetir());
-        ui.time_text.textContent = "Kalan Süre";
         ui.soruSayisiniGöster(quiz.soruIndex + 1, quiz.sorular.length);
         ui.next_btn.classList.remove("show");
 
